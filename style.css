@@ -69,8 +69,8 @@ body {
 /* text information */
 .text-box {
     position: absolute;
-    top: 5%;
-    right: 0;
+    top: 10%;
+    right: 5%;
     width: 550px;
     transform: translateY(50%);
 }
@@ -121,4 +121,12 @@ body {
      outline: none;
      border: none;
      cursor: pointer;
+ }
+
+ .signUp {
+     position: absolute;
+     bottom: 40px;
+     left: 18%;
+     font-size: 12px;
+     font-weight: 400;
  }
