@@ -1,0 +1,124 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background display */
+#background {
+    background: url("/imgs/bg1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: bottom center;
+    background-size: cover;
+    position: relative;
+}
+
+/* start of navBar */
+.navBar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    padding-top: 30px;
+}
+
+.navBar .logoIcon {
+    font-size: 25px;
+    color: #66F2B2;
+}
+
+.navBar .user {
+    font-size: 25px;
+    color: #66F2B2;
+    display: flex;
+    align-items: center;
+}
+
+.user button {
+    margin-right: 30px;
+    background-color: transparent;
+    color: #66F2B2;
+    font-size: 12px;
+    padding: 7px 20px;
+    border: 2px solid #66F2B2;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Overlay */
+.container {
+    background-color: rgba(86, 86, 86, 0.3);
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+/* text information */
+.text-box {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 550px;
+    transform: translateY(50%);
+}
+
+.text-box h1 {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.text-box span {
+   color: #66F2B2;
+}
+
+.text-box p {
+    font-weight: 100;
+    line-height: 25px;
+    word-spacing: 3px;
+ }
+
+ form {
+   margin-top: 25px;
+
+ }
+
+ input {
+     border: 2px solid #ffffff;
+     border-radius: 4px;
+     background-color: transparent;
+     padding: 8px 40px;
+     margin-bottom: 20px;
+ }
+
+ ::placeholder {
+     color: #ccc;
+     font-size: 12px;
+ }
+ 
+ form button {
+     padding: 7px 35px;
+     background-color: #66F2B2;
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: bold;
+     border-radius: 4px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+ }
