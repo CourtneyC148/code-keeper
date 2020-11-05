@@ -21,9 +21,11 @@ function getInfo() {
     for (let i = 0; i < users.length; i++) {
         if (userName === users[i].username && password === users[i].password) {
             error.style.display = ("none");
-            console.log(users[i].username + " is now logged in!");
+            document.getElementById("userName").focus();
+            window.location.assign('welcome.html');
             return
         }
     }
     error.style.display = ("block");
+
 }
