@@ -1,7 +1,7 @@
 // Users account
 const users = [
     {
-        username: "Courtney148",
+        username: "Courtneyc148",
         password: "Craw2020!"
     },
 
@@ -11,18 +11,19 @@ const users = [
     }
 ]
 
-// let userName = document.getElementById("userName").value;
-// let password = document.getElementById("password").value;
-let submit = document.getElementById("submit");
+
+let error = document.getElementById("error");
 
 function getInfo() {
     let userName = document.getElementById("userName").value;
     let password = document.getElementById("password").value;
 
     for (let i = 0; i < users.length; i++) {
-        if(userName === users[i].username && password === users[i].password) {
-            console.log(userName + " is now logged in!");
+        if (userName === users[i].username && password === users[i].password) {
+            error.style.display = ("none");
+            console.log(users[i].username + " is now logged in!");
+            return
         }
     }
+    error.style.display = ("block");
 }
-

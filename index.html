@@ -28,15 +28,16 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit Officiis, eligendi. Blanditiis suscipit eaque neque dicta? Inventore harum blanditiis doloremque enim.
                 </p>
 
-                <form action="">
+                <form class="loginForm" method="post" action="">
                     <input id="userName" type="text" placeholder="Username" required>
                     <br>
                     <input id="password" type="password" placeholder="Password" required>
+                    <div id="error">
+                        <p>Incorrect username or Password</p>
+                    </div>
                     <br>
                     <button id="submit" type="button" onclick="getInfo()">Sign In</button>
                 </form>
-
-                <div id="error"></div>
             </div>
             <p class="signUp">Don't have an account? <a href="#">Sign Up</a></p>
         </div>
