@@ -11,7 +11,7 @@ body {
 
 /* Background display */
 #background {
-    background: url("/imgs/bg1.JPG");
+    background: url("/imgs/bg1.jpg");
     height: 100vh;
     width: 100%;
     background-position: bottom center;
